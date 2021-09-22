@@ -10,6 +10,9 @@ public class Main {
 		System.out.println(e2);
 		System.out.println(e3);
 
+		System.out.printf("$s - Életkor $d", e1, e1.getEletkor());
+		System.out.printf("$s - Életkor $d", e2, e2.getEletkor());
+
 		e1.getSzuletesiEv();
     }
 }

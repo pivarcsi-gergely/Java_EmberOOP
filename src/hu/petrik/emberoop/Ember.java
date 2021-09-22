@@ -1,7 +1,10 @@
 package hu.petrik.emberoop;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.format.DateTimeFormatter;
 
 public class Ember {
     private String nev;
@@ -29,7 +32,8 @@ public class Ember {
     }
     public int getEletkor(){
         LocalDate maiDatum = LocalDate.now();
-        LocalDate szuletesiDatum = LocalDate.parse(szulDatum);
+        DateTimeFormatter formatum = DateTimeFormatter.ofPattern("yyyy-M-d");
+        LocalDate szuletesiDatum = LocalDate.parse(szulDatum, formatum);
         Period kulonbseg = Period.between(maiDatum, szuletesiDatum);
         return kulonbseg.getYears();
     }

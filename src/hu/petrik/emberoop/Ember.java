@@ -11,6 +11,12 @@ public class Ember {
         this.szulHely = szulHely;
     }
 
+    public int getSzuletesiEv(){
+        String szuletesiEvStringben = szulDatum.substring(0,4);
+        return Integer.parseInt(szuletesiEvStringben);
+    }
+
+
     @Override
     public String toString() {
         return String.format("$s - $s - $s", this.nev, this.szulDatum, this.szulHely);

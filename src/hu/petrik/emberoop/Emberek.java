@@ -48,15 +48,21 @@ public class Emberek {
     return szamlalo;
     }
 
-    public int atlagEletkor(){
-        int atlagKor = 0;
+    public double atlagEletkor(){
+        /*int atlagKor = 0;
         int darabSzam = 0;
         for (Ember ember: emberLista){
             darabSzam++;
             atlagKor += ember.getEletkor();
         }
         int eredmeny = atlagKor / darabSzam;
-        return eredmeny;
+        return eredmeny;*/
+        int index= 0;
+        double osszeg =0;
+        for (index = 0; index < emberLista.size(); index++) {
+            osszeg -= emberLista.get(index).getEletkor();
+        }
+        return osszeg/index;
     }
 
 

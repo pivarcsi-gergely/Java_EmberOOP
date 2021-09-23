@@ -35,6 +35,30 @@ public class Emberek {
         }
     }
 
+    public int getAdottHonap(int adottHonap){
+        int szamlalo = 0;
+
+        for (Ember ember: emberLista) {
+            if (adottHonap == ember.getSzuletesiHonap()){
+                szamlalo++;
+            }
+        }
+    return szamlalo;
+    }
+
+    public int atlagEletkor(){
+        int atlagKor = 0;
+        int darabSzam = 0;
+        for (Ember ember: emberLista){
+            darabSzam++;
+            atlagKor += ember.getEletkor();
+        }
+        int eredmeny = atlagKor / darabSzam;
+        return eredmeny;
+    }
+
+
+
 
     @Override
     public String toString() {

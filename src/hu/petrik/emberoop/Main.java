@@ -1,6 +1,10 @@
 package hu.petrik.emberoop;
 
+import java.util.Scanner;
+
 public class Main {
+
+	public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
 	Ember e1 = new Ember("Lakatos Ferenc", "1983-1-12", "Budapest");
@@ -18,6 +22,10 @@ public class Main {
 
 
 
+		System.out.println("Adjon meg egy hónapot:");
+		int adottHonap = sc.nextInt();
+		System.out.println(eK2.getAdottHonap(adottHonap));
+		System.out.println(eK2.atlagEletkor());
     }
 
     public static void emberOsztalyTeszje(Ember e1, Ember e2, Ember e3){

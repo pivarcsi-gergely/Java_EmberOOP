@@ -12,6 +12,7 @@ public class Main {
 
 		System.out.printf("$s - Életkor $d", e1, e1.getEletkor());
 		System.out.printf("$s - Életkor $d", e2, e2.getEletkor());
+		System.out.println("Teszt");
 
 		e1.getSzuletesiEv();
     }

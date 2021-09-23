@@ -14,4 +14,13 @@ public class Emberek {
             this.emberLista.add(ember);
         }
     }
+
+    @Override
+    public String toString() {
+        String ures = "";
+        for (Ember ember: this.emberLista) {
+            ures += ember + "\n";
+        }
+        return ures;
+    }
 }

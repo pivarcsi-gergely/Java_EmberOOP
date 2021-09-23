@@ -13,7 +13,8 @@ public class Main {
 	Ember[] emberTomb = new Ember[]{e1,e2,e3};
 
 	Emberek eK1 = new Emberek(emberTomb);
-	System.out.println(eK1);
+	Emberek eK2 = new Emberek("emberek.txt");
+	System.out.println(eK2);
 
 
 
